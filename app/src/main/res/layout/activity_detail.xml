@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Previous"
+            android:onClick="previousPokemon"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Next"
+            android:onClick="nextPokemon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/PokemonSpriteViewId"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/bulbasaur" />
+
+            <TextView
+                android:id="@+id/DetailNameTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/DetailTypesTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Types"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+             <LinearLayout
+                  android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="HP"
+                    android:textSize="18dp" />
+
+                 <TextView
+                     android:id="@+id/DetailHPTextViewId"
+                     android:layout_width="32dp"
+                     android:layout_height="wrap_content"
+                     android:text="99"
+                     android:textSize="18dp" />
+
+             </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/DetailSpeedTextViewId"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Attack"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/DetailAttackTextViewId"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Defense"
+                    android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/DetailDefenseTextViewId"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Special Attack"
+                    android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/DetailSpecialAttackTextViewId"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Special Defense"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/DetailSpecialDefenseTextViewId"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/DetailDescriptionTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Description" />
+
+
+</LinearLayout>
+
+
